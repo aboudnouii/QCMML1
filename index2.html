@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Pro Quiz</title>
+    <title>Theoretical ML Pro Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
     <div class="app-container">
         <header>
             <div class="header-content">
-                <h1>Machine Learning Pro Quiz</h1>
+                <h1>Theoretical ML Pro Quiz</h1>
                 <div class="dashboard">
                     <div class="stat-card">
                         <span class="stat-label">Progress</span>
@@ -35,21 +35,21 @@
 
         <main id="main-content">
             <div id="start-screen" class="screen active">
-                <h2>Welcome to the ML Pro Quiz</h2>
+                <h2>Theoretical ML Knowledge Quiz</h2>
                 <div style="text-align: right; margin-bottom: 1rem;">
-                    <a href="index2.html" class="btn-reset" style="text-decoration: none;">➔ Switch to Theoretical Quiz</a>
+                    <a href="index.html" class="btn-reset" style="text-decoration: none;">➔ Switch to Practical Notebook Quiz</a>
                 </div>
-                <p>Test your knowledge on Data Preprocessing, Feature Selection, and Model Evaluation based on Titanic Dataset examples.</p>
+                <p>Test your deep understanding of Machine Learning concepts, statistics, evaluation metrics, and algorithms based on theoretical analysis.</p>
                 <div class="quiz-info">
                     <p>Total Questions: <strong id="total-q-display">100+</strong></p>
                     <p>Topics Covered:</p>
                     <ul>
-                        <li>Handling Missing Values & Duplicates</li>
-                        <li>Outlier Detection (IQR & Z-Score)</li>
-                        <li>Encoding & Normalization</li>
-                        <li>Feature Selection (VarianceThreshold, SelectKBest)</li>
-                        <li>Logistic Regression, KNN, Decision Trees, Random Forests</li>
-                        <li>Model Evaluation (Accuracy, F1, ROC-AUC, CV)</li>
+                        <li>Statistical Properties (Mean, Median, Standard Deviation)</li>
+                        <li>Data Distributions & Transformations</li>
+                        <li>Curse of Dimensionality & Feature Selection</li>
+                        <li>Bias-Variance Tradeoff</li>
+                        <li>Evaluation Metrics (Precision, Recall, ROC-AUC)</li>
+                        <li>Algorithm Theory (Regressions, Trees, Ensembles)</li>
                     </ul>
                 </div>
                 <button id="start-btn" class="btn-primary">Start Quiz</button>
@@ -94,15 +94,15 @@
         </main>
         
         <footer>
-            <p>Based on TP2 (Data Preprocessing) & TP3 (ML Titanic Models)</p>
+            <p>Theoretical Machine Learning Principles & Exam Design</p>
         </footer>
     </div>
 
     <!-- Global arrays -->
-    <script src="questions1.js"></script>
-    <script src="questions2.js"></script>
-    <script src="questions3.js"></script>
-    <script src="questions4.js"></script>
+    <script src="theory_q1.js"></script>
+    <script src="theory_q2.js"></script>
+    <script src="theory_q3.js"></script>
+    <script src="theory_q4.js"></script>
     <!-- Main logic -->
     <script src="script.js"></script>
 </body>
