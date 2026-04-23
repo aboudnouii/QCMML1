@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Pro Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                <h1>Machine Learning Pro Quiz</h1>
+                <div class="dashboard">
+                    <div class="stat-card">
+                        <span class="stat-label">Progress</span>
+                        <span class="stat-value" id="progress-text">0 / 0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Score</span>
+                        <span class="stat-value"><span id="score-text">0</span>%</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Correct</span>
+                        <span class="stat-value correct-value" id="correct-text">0</span>
+                    </div>
+                    <button id="reset-btn" class="btn-reset">↺ Restart</button>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <div id="start-screen" class="screen active">
+                <h2>Welcome to the ML Pro Quiz</h2>
+                <p>Test your knowledge on Data Preprocessing, Feature Selection, and Model Evaluation based on Titanic Dataset examples.</p>
+                <div class="quiz-info">
+                    <p>Total Questions: <strong id="total-q-display">100+</strong></p>
+                    <p>Topics Covered:</p>
+                    <ul>
+                        <li>Handling Missing Values & Duplicates</li>
+                        <li>Outlier Detection (IQR & Z-Score)</li>
+                        <li>Encoding & Normalization</li>
+                        <li>Feature Selection (VarianceThreshold, SelectKBest)</li>
+                        <li>Logistic Regression, KNN, Decision Trees, Random Forests</li>
+                        <li>Model Evaluation (Accuracy, F1, ROC-AUC, CV)</li>
+                    </ul>
+                </div>
+                <button id="start-btn" class="btn-primary">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="screen">
+                <div class="question-header">
+                    <span id="question-number">Question 1</span>
+                    <span id="difficulty-badge" class="badge">MEDIUM</span>
+                </div>
+                <h3 id="question-text">Question text goes here?</h3>
+                
+                <div id="options-container" class="options-grid">
+                    <!-- Options will be dynamically injected here -->
+                </div>
+
+                <div id="feedback-container" class="feedback hidden">
+                    <div id="feedback-icon"></div>
+                    <div class="feedback-content">
+                        <h4 id="feedback-title">Result</h4>
+                        <p id="explanation-text">Explanation goes here.</p>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button id="next-btn" class="btn-primary" disabled>Next Question ➔</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="screen">
+                <h2>Quiz Completed!</h2>
+                <div class="final-score">
+                    <div class="score-circle">
+                        <span id="final-percentage">0%</span>
+                    </div>
+                </div>
+                <div class="results-stats">
+                    <p>You answered <strong id="final-correct">0</strong> out of <strong id="final-total">0</strong> correctly.</p>
+                </div>
+                <button id="play-again-btn" class="btn-primary">Play Again</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Based on TP2 (Data Preprocessing) & TP3 (ML Titanic Models)</p>
+        </footer>
+    </div>
+
+    <!-- Global arrays -->
+    <script src="questions1.js"></script>
+    <script src="questions2.js"></script>
+    <script src="questions3.js"></script>
+    <script src="questions4.js"></script>
+    <!-- Main logic -->
+    <script src="script.js"></script>
+</body>
+</html>
